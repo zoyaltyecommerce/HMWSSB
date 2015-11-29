@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Water Board Request OTP Details</title>
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/requestOPT.css" rel="stylesheet">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]--> 
+   </head>
+   <body>
+      <div id="page">
+         <div id="header"> 
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-3 col-sm-3 col-xs-3">
+                  	<div class="himg">
+                     <a href="index.html"><img src="img/back_btn.png" class="img-responsive" id="btn" alt="logo"/></a>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-6" id="filter">
+                     <h3 class="text-center">DETAILS</h3>
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-3">
+                     <a href="index.html"><img src="img/HMWSSB.jpg" class="img-responsive" alt="logo"/></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="details">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <form role="form">
+                      	<div class="form-group">
+                     		<button type="button" class="btn btn-xs" id="capture">MODIFY</button>
+                    	 </div>
+                        <div class="form-group">
+                          
+                           <label>Constituency :</label>
+                           <div class="form-group">
+                              <select class="form-control sel1" required="">
+                                 <option value="">None</option>
+                                 <option>Constituency</option>
+                                 <option>Constituency</option>
+                                 <option>Constituency</option>
+                                 <option>Constituency</option>
+                                 <option>Constituency</option>
+                              </select>
+                           </div>
+                           <div class="form-group">   
+                              <label>Corporation Area / Village :</label>
+                              <input  class="form-control text" name="roi" type="text" oninvalid="setCustomValidity('Please fill the field')" onchange="try{setCustomValidity('')}catch(e){}" required readonly>             
+                           </div>
+                           <div class="form-group">
+                              <label>Colony :</label>
+                              <input  class="form-control text" type="text" oninvalid="setCustomValidity('Please fill the field')" onchange="try{setCustomValidity('')}catch(e){}" required readonly>
+                           </div>
+                           <div class="form-group">   
+                              <label>Registered No :</label>
+                              <input  class="form-control text" type="text"  oninvalid="setCustomValidity('Please fill the field')" onchange="try{setCustomValidity('')}catch(e){}" required readonly>
+                           </div>
+                           <div class="form-group">
+                              <label>Division :</label>
+                              <select class="form-control sel1" required="">
+                                 <option value="">None</option>
+                                 <option>Division</option>
+                                 <option>Division</option>
+                                 <option>Division</option> 
+                                 <option>Division</option>
+                                 <option>Division</option>
+                              </select>
+                           </div>
+                           <div class="form-group">   
+                              <label>No of Parks :</label>
+                              <input  class="form-control text" type="text"  oninvalid="setCustomValidity('Please fill the field')" onchange="try{setCustomValidity('')}catch(e){}" required readonly>
+                           </div>
+                           <div class="form-group">  
+                              <label>No of Schools :</label> 
+                              <input  class="form-control text" type="text"  oninvalid="setCustomValidity('Please fill the field')" onchange="try{setCustomValidity('')}catch(e){}" required readonly>
+                           </div>
+                           <div class="form-group"> 
+                              <label>No of Surface Water Tanks :</label>  
+                              <input  class="form-control text" type="text"  oninvalid="setCustomValidity('Please fill the field')" onchange="try{setCustomValidity('')}catch(e){}" required readonly>
+                           </div>
+                           <div class="form-group">
+                              <label>Type Of Soil :</label>  
+                              <select class="form-control sel1" required="">
+                                 <option value="">None</option>
+                                 <option>Type Of Soil</option>
+                                 <option>Type Of Soil</option>
+                                 <option>Type Of Soil</option>
+                                 <option>Type Of Soil</option>
+                                 <option>Type Of Soil</option>
+                              </select>
+                           </div>
+                           <div class="form-group"> 
+                              <label>No of Houses (Individual) :</label>    
+                              <input  class="form-control text" type="text"  oninvalid="setCustomValidity('Please fill the field')" onchange="try{setCustomValidity('')}catch(e){}" required readonly>
+                           </div>
+                           <div class="form-group">
+                              <label>No of Houses (Apartments) :</label>     
+                              <input  class="form-control text" type="text" oninvalid="setCustomValidity('Please fill the field')" onchange="try{setCustomValidity('')}catch(e){}" required readonly>
+                           </div>
+                           <div class="form-group">  
+                              <label>No of Borewells :</label>     
+                              <input  class="form-control text" type="text" oninvalid="setCustomValidity('Please fill the field')" onchange="try{setCustomValidity('')}catch(e){}" required readonly>  
+                           </div>
+                           <div class="form-group"> 
+                              <label>Depth range of Borewells :</label>       
+                              <input  class="form-control text" type="text" oninvalid="setCustomValidity('Please fill the field')" onchange="try{setCustomValidity('')}catch(e){}" required readonly> 
+                           </div>
+                           <div class="form-group"> 
+                              <label>Min :</label>  
+                              <input  class="form-control text" type="text"  oninvalid="setCustomValidity('Please fill the field')" onchange="try{setCustomValidity('')}catch(e){}" required readonly>  
+                           </div>
+                           <div class="form-group">  
+                              <label>Max :</label>   
+                              <input  class="form-control text" type="text"  oninvalid="setCustomValidity('Please fill the field')" onchange="try{setCustomValidity('')}catch(e){}" required readonly>
+                           </div>
+                           <div class="form-group">  
+                              <label>Depth of Weathered Zone :</label>    
+                              <input  class="form-control text" type="text" oninvalid="setCustomValidity('Please fill the field')" onchange="try{setCustomValidity('')}catch(e){}" required readonly>
+                           </div>
+                           <div class="form-group">
+                              <label>Length of Casting Inserted(in Meters) :</label>    
+                              <input  class="form-control text" type="text"  oninvalid="setCustomValidity('Please fill the field')" onchange="try{setCustomValidity('')}catch(e){}" required readonly>
+                           </div>
+                           <div class="form-group"> 
+                              <label>Depth of wet encountered(Meters bgl) :</label>      
+                              <input  class="form-control text" type="text"  oninvalid="setCustomValidity('Please fill the field')" onchange="try{setCustomValidity('')}catch(e){}" required readonly>
+                           </div>
+                           <div class="form-group"> 
+                              <label>Yields of the Bore wells(Lit/H):</label>        
+                              <input  class="form-control text" type="text"  oninvalid="setCustomValidity('Please fill the field')" onchange="try{setCustomValidity('')}catch(e){}" required readonly>
+                           </div>
+                           <div class="form-group"> 
+                              <label>Present range of depth to water level:</label>    
+                              <input  class="form-control text" type="text"  oninvalid="setCustomValidity('Please fill the field')" onchange="try{setCustomValidity('')}catch(e){}" required readonly>
+                           </div>
+                           <div class="form-group">
+                              <label>Range of Depth to Level After Rainy Seasony :</label>   
+                              <input  class="form-control text" type="text"  oninvalid="setCustomValidity('Please fill the field')" onchange="try{setCustomValidity('')}catch(e){}" required readonly>								
+                           </div>
+                           <div class="form-group">
+                              <label>Status of Drainage :</label>   
+                              <select class="form-control sel1" required="">
+                                 <option value="">None</option>
+                                 <option>Status of Drainage</option>
+                                 <option>Status of Drainage</option>
+                                 <option>Status of Drainage</option>
+                                 <option>Status of Drainage</option>
+                                 <option>Status of Drainage</option>
+                              </select>
+                           </div>
+                           <div class="form-group">
+                              <label>Status of Roads :</label>       
+                              <select class="form-control sel1" required="">
+                                 <option value="">None</option>
+                                 <option>Status of Roads</option>
+                                 <option>Status of Roads</option>
+                                 <option>Status of Roads</option>
+                                 <option>Status of Roads</option> 
+                                 <option>Status of Roads</option>
+                              </select>
+                           </div>
+                           <div class="form-group"> 
+                              <label>Contact No of Representative of Colony :</label>         
+                              <input  class="form-control text" type="text" oninvalid="setCustomValidity('Please fill the field')" onchange="try{setCustomValidity('')}catch(e){}" required readonly>
+                           </div>
+                           
+                              <button type="button" class="btn btn-block">CAPTURE PICTURE</button>
+                             <input class="btn btn-xs center-block approve" value="APPROVE" type="submit">
+  
+                        </div>
+                     </form>
+                  </div> 
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+      <script src="js/bootstrap.min.js"></script>
+      <script type="text/javascript">
+		  $(document).ready(function(){
+			 $('#capture').click(function(){
+				 $('.text').removeAttr('readonly');
+			});   
+		  });  
+	  </script>
+   </body>
+</html>

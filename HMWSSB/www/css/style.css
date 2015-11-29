@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font: 12px/1.4 arial;
+    background: #fff;
+}
+.row {
+    margin: 0;
+    padding: 0;
+}
+#header {
+    background: #075293;
+    color: #fff; 
+    padding: 5px 0px;
+}
+#header h3 {
+    font-family: wf_segoe-ui_normal, Tahoma, Verdana, Arial, sans-serif;
+    font-weight: normal;
+    text-align: center;
+}
+#banner .container {
+    margin: 19% 0% 5% 0%;
+}
+#banner img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-left: 4%;
+}
+#content {
+    color: #0b568d;
+    margin-bottom: 8%;
+}
+#content h3 {
+    font-weight: bold;
+    font-size: 50px;
+    font-family: wf_segoe-ui_normal, Tahoma, Verdana, Arial, sans-serif;
+    font-weight: normal;
+}
+#content h2 {
+    margin-top: 0px;
+    line-height: 1px !important;
+}
