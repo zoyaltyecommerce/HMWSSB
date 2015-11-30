@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
    <head>
       <meta charset="utf-8">
@@ -11,6 +11,13 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]--> 
+       <style>
+           .aheader
+           {
+               border-right:2px solid #00569b;
+               padding:1px 10px;
+           }
+       </style>
    </head>
    <body>
       <div id="page">
@@ -36,9 +43,15 @@
                <div class="row">
                   <div class="col-md-12">
                      <form role="form">
+                         <div class="form-group">
+                             <a href="#CaptureImages" class="aheader">Images</a><a class="aheader" href="#Estimation">Estimation</a><a style="padding-left:10px" href="#status">Status</a>
+                         </div>
                       	<div class="form-group">
                      		<button type="button" class="btn btn-xs" id="capture">MODIFY</button>
                     	 </div>
+                         <div class="form-group" >
+                            <label>APPLICATION DETAILS</label>
+                         </div>
                         <div class="form-group">
                           
                            <label>Constituency :</label>
@@ -174,12 +187,112 @@
                            </div>
                            
                               <button type="button" class="btn btn-block">CAPTURE PICTURE</button>
-                             <input class="btn btn-xs center-block approve" value="APPROVE" type="submit">
+                             
   
                         </div>
                      </form>
                   </div> 
-               </div>
+                   
+                   <a id="CaptureImages">
+                       <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+                           <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
+                               <div class="earth">
+                                   <img src="img/earth.jpg" class="img-responsive center-block" alt="earth" />
+                                   <p class="text-center"><a href="#">21-2-2015</a></p>
+                                   <a href="#"><img src="img/delete-20.png" class="img-responsive delete fa-spin" alt="delete" /></a>
+                               </div>
+                           </div>
+                           <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
+                               <div class="earth">
+                                   <img src="img/earth.jpg" class="img-responsive center-block" alt="earth" />
+                                   <p class="text-center"><a href="#">21-2-2015</a></p>
+                               </div>
+                               <a href="#"><img src="img/delete-20.png" class="img-responsive delete" alt="delete" /></a>
+                           </div>
+                           <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
+                               <div class="earth">
+                                   <img src="img/earth.jpg" class="img-responsive center-block" alt="earth" />
+                                   <p class="text-center"><a href="#">21-2-2015</a></p>
+                               </div>
+                               <a href="#"><img src="img/delete-20.png" class="img-responsive delete" alt="delete" /></a>
+                           </div>
+                           <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
+                               <div class="earth">
+                                   <img src="img/earth.jpg" class="img-responsive center-block" alt="earth" />
+                                   <p class="text-center"><a href="#">21-2-2015</a></p>
+                               </div>
+                               <a href="#"><img src="img/delete-20.png" class="img-responsive delete" alt="delete" /></a>
+                           </div>
+                           <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
+                               <div class="earth">
+                                   <img src="img/earth.jpg" class="img-responsive center-block" alt="earth" />
+                                   <p class="text-center"><a href="#">21-2-2015</a></p>
+                               </div>
+                               <a href="#"><img src="img/delete-20.png" class="img-responsive delete" alt="delete" /></a>
+                           </div>
+                           <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
+                               <div class="earth">
+                                   <img src="img/earth.jpg" class="img-responsive center-block" alt="earth" />
+                                   <p class="text-center"><a href="#">21-2-2015</a></p>
+                               </div>
+                               <a href="#"><img src="img/delete-20.png" class="img-responsive delete" alt="delete" /></a>
+                           </div>
+
+                       </div>
+                   </a>
+                   <a id="Estimation">
+                       <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+                           <div class="form-group" style="text-align:center">
+                               <label>ESTIMATION DETAILS</label>
+                           </div>
+                           <div class="form-group">
+                               <label>Drilling Depth (in M) :</label>
+                               <input class="form-control" type="text" value="60.0" id="ecc">
+                           </div>
+                           <div class="form-group">
+                               <label>PVC Quantity :</label>
+                               <input class="form-control" type="text" value="6.0" id="ecc">
+
+                           </div>
+                           <div class="form-group">
+                               <label>Excavation Carting Charges :</label>
+                               <label class="form-control">5000</label>
+                           </div>
+                           <div class="form-group">
+                               <label>Drilling Charges :</label>
+                               <label class="form-control">5000</label>
+                           </div>
+                           <div class="form-group">
+                               <label>Construction Charges :</label>
+                               <input class="form-control" type="text" value="9.0" id="ecc">
+                           </div>
+                           <div class="form-group">
+                               <label>L . S :</label>
+                               <input class="form-control" type="text" value="197.40" id="ecc">
+                           </div>
+                           <div class="form-group">
+                               <label>TOTAL AMOUNT :</label>
+                               <label class="form-control">RS 56000.00</label>
+                               <!--<input class="btn btn-xs center-block approve" value="RESULT" type="submit">-->
+                           </div>
+
+                       </div>
+                   </a>
+                        <a id="status">
+                            <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+                                <div class="form-group">
+                                    <label>STATUS :</label>
+                                    <select style="margin-top:5px" class="form-control"><option value="Active">New</option><option value="Active">In progress</option></select>
+                                    <!--<input class="btn btn-xs center-block approve" value="RESULT" type="submit">-->
+                                </div>
+                                <div class="form-group" style="text-align:center">
+
+                                    <input class="btn btn-xs approve" value="APPROVE" type="submit"><input style="margin-left:10px" class="btn btn-xs approve" value="Save" type="submit">
+                                </div>
+                            </div>
+                        </a>
+                   
+                   </div>
             </div>
          </div>
       </div>
