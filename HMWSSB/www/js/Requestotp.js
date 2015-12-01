@@ -8,13 +8,29 @@
     document.addEventListener('deviceready', onDeviceReady.bind(this), false);
 
     function onDeviceReady() {
+        $(document).ready(function () {
+            $('#btn_requestotp').click(function () {
+               
+                var mobilenumber=$('#txt_mobile').val();
+                if(mobilenumber!="")
+                {
+                    if(phonenumber(mobilenumber)==true)
+                    {
 
-        setInterval(function () {
-
-            location.href = "requestOTP.html";
-
-        }, 1000);
+                    }
+                    else
+                    {
+                        alert('Enter a valid phone number');
+                    }
+                }
+                else
+                {
+                    alert('Enter mobile number');
+                }
+            });
+        });
         
+
         // Handle the Cordova pause and resume events
         document.addEventListener('pause', onPause.bind(this), false);
         document.addEventListener('resume', onResume.bind(this), false);
@@ -22,7 +38,20 @@
 
         // TODO: Cordova has been loaded. Perform any initialization that requires Cordova here.
     };
-
+    function phonenumber(inputtxt)  
+    {  
+       
+        var phoneno = /^\d{10}$/;  
+        if(inputtxt.match(phoneno))  
+        {  
+            return true;  
+        }  
+        else  
+        {  
+        
+            return false;  
+        }  
+    }  
     function onPause() {
         // TODO: This application has been suspended. Save application state here.
     };
