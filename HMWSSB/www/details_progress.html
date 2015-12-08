@@ -11,15 +11,22 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]--> 
-   </head>
+       <style>
+           .aheader
+           {
+               border-right:2px solid #00569b;
+               padding:1px 10px;
+           }
+       </style>
+   </head>  
    <body>
-      <div id="page">
+      <div id="page"> 
          <div id="header"> 
-            <div class="container">
-               <div class="row">
+         	<div class="row">
+               <div class="container">
                   <div class="col-md-3 col-sm-3 col-xs-3">
                   	<div class="himg">
-                     <a href="index.html"><img src="img/back_btn.png" class="img-responsive" id="btn" alt="logo"/></a>
+                     <a href="application_progress.html"><img src="img/back_btn.png" class="img-responsive" id="btn" alt="logo"/></a>
                     </div>
                   </div>
                   <div class="col-md-6 col-sm-6 col-xs-6" id="filter">
@@ -31,25 +38,24 @@
                </div>
             </div>
          </div>
-         <div class="details">
+         <div class="details"> 
             <div class="container"> 
-               <div class="row">
-                  <div class="col-md-12"> 
-                    <div class="form-group"> 
-               		 <div>
-                     <input class="btn btn-lg stat" value="PICTURE" type="submit">
-                     <input class="btn btn-lg stat" value="STATUS" type="submit">
-                     <button type="button" class="btn btn-lg" id="capture">MODIFY</button>
-               	  <p>&nbsp;</p>
-                                       
-                     </div>
+               <div class="row"> 
+                  <div class="col-md-12">
+                     <form role="form"> 
+                         <div class="form-group" > 
+                            <label>APPLICATION DETAILS</label> 
+                         </div>
+                          <a href="#CaptureImages"><input class="btn btn-xs capture" value="PICTURE" class="dtls" type="button" style="background:#00569b"></a>
+                            <a href="estimation_progress.html"><input class="btn btn-xs capture" value="ESTIMATION" class="dtls" type="button" style="background:#00569b"></a> 
+                            <a href="#status"><input class="btn btn-xs capture" value="STATUS" class="dtls" type="button" style="background:#00569b"></a>
                         <div class="form-group">
                            <label>Constituency :</label>
                            <div class="form-group">
                               <select class="form-control sel1" required="">
                                  <option value="">None</option>
                                  <option>Constituency</option>
-                                 <option>Constituency</option>
+                                 <option>Constituency</option> 
                                  <option>Constituency</option>
                                  <option>Constituency</option>
                                  <option>Constituency</option>
@@ -174,69 +180,79 @@
                            <div class="form-group"> 
                               <label>Contact No of Representative of Colony :</label>         
                               <input  class="form-control text" type="text" oninvalid="setCustomValidity('Please fill the field')" onchange="try{setCustomValidity('')}catch(e){}" required readonly>
-                           </div>
-                           
-                              <button type="button" class="btn btn-block">CAPTURE PICTURE</button>
-                              <div class="details">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
-                     <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
-                        <div class="earth">
-                           <img src="img/earth.jpg" class="img-responsive center-block"  alt="earth"/>
-                           <p class="text-center"><a href="#">21-2-2015</a></p>
-                           <a href="#"><img src="img/delete-20.png" class="img-responsive delete fa-spin" alt="delete"/></a> 
-                        </div>   
-                     </div>  
-                     <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
-                        <div class="earth">
-                           <img src="img/earth.jpg" class="img-responsive center-block" alt="earth"/>
-                           <p class="text-center"><a href="#">21-2-2015</a></p>
-                        </div> 
-                        <a href="#"><img src="img/delete-20.png" class="img-responsive delete" alt="delete"/></a>    
-                     </div>
-                     <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
-                        <div class="earth">
-                           <img src="img/earth.jpg" class="img-responsive center-block" alt="earth"/>
-                           <p class="text-center"><a href="#">21-2-2015</a></p>
+                           </div>      
+                            <div class="form-group" style="text-align:center">
+                              <a href="#" id="CaptureImages"><input class="btn btn-lg approve" value="CAPTURE PICTURE" type="submit"></a>
+                           </div>  
                         </div>
-                        <a href="#"><img src="img/delete-20.png" class="img-responsive delete" alt="delete"/></a>
-                     </div>
-                     <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
-                        <div class="earth">
-                           <img src="img/earth.jpg" class="img-responsive center-block" alt="earth"/>
-                           <p class="text-center"><a href="#">21-2-2015</a></p>
-                        </div>
-                        <a href="#"><img src="img/delete-20.png" class="img-responsive delete" alt="delete"/></a>
-                     </div>
-                     <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
-                        <div class="earth">
-                           <img src="img/earth.jpg" class="img-responsive center-block" alt="earth"/>
-                           <p class="text-center"><a href="#">21-2-2015</a></p>
-                        </div>
-                        <a href="#"><img src="img/delete-20.png" class="img-responsive delete" alt="delete"/></a>
-                     </div>
-                     <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
-                        <div class="earth">
-                           <img src="img/earth.jpg" class="img-responsive center-block" alt="earth"/>
-                           <p class="text-center"><a href="#">21-2-2015</a></p>
-                        </div>
-                        <a href="#"><img src="img/delete-20.png" class="img-responsive delete" alt="delete"/></a>
-                     </div>
-                     <form role="form">
-                        <div class="form-group">
-                         <!--  <input class="btn btn-lg center-block " value="SAVE" type="submit">--> 
-                        </div> 
                      </form>
+                  </div>   
+                   <div> 
+                       <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+                           <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
+                               <div class="earth">
+                                   <img src="img/earth.jpg" class="img-responsive center-block" alt="earth" />
+                                   <p class="text-center"><a href="#">21-2-2015</a></p>
+                                   <a href="#"><img src="img/delete-20.png" class="img-responsive delete fa-spin" alt="delete" /></a>
+                               </div>
+                           </div>
+                           <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
+                               <div class="earth">
+                                   <img src="img/earth.jpg" class="img-responsive center-block" alt="earth" />
+                                   <p class="text-center"><a href="#">21-2-2015</a></p>
+                               </div>
+                               <a href="#"><img src="img/delete-20.png" class="img-responsive delete" alt="delete" /></a>
+                           </div>
+                           <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
+                               <div class="earth">
+                                   <img src="img/earth.jpg" class="img-responsive center-block" alt="earth" />
+                                   <p class="text-center"><a href="#">21-2-2015</a></p>
+                               </div>
+                               <a href="#"><img src="img/delete-20.png" class="img-responsive delete" alt="delete" /></a>
+                           </div>
+                           <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
+                               <div class="earth">
+                                   <img src="img/earth.jpg" class="img-responsive center-block" alt="earth" />
+                                   <p class="text-center"><a href="#">21-2-2015</a></p>
+                               </div>
+                               <a href="#"><img src="img/delete-20.png" class="img-responsive delete" alt="delete" /></a>
+                           </div>
+                           <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
+                               <div class="earth">
+                                   <img src="img/earth.jpg" class="img-responsive center-block" alt="earth" />
+                                   <p class="text-center"><a href="#">21-2-2015</a></p>
+                               </div>
+                               <a href="#"><img src="img/delete-20.png" class="img-responsive delete" alt="delete" /></a>
+                           </div>
+                           <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
+                               <div class="earth">
+                                   <img src="img/earth.jpg" class="img-responsive center-block" alt="earth" />
+                                   <p class="text-center"><a href="#">21-2-2015</a></p>
+                               </div>
+                               <a href="#"><img src="img/delete-20.png" class="img-responsive delete" alt="delete" /></a>
+                           </div>
+
+                       </div>
+                   </div>
+                   <div id="status"> 
+                        <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+                            <label>Status</label>
+                             <select class="form-control sel1">
+                                 <option>IN PROGRESS</option>
+                                 <option>COMPLETED</option>
+                              </select> 
+                            <div class="form-group" style="text-align:center">
+                                <a href="files.html"><input class="btn btn-lg approve center-block" value="UPDATE" type="submit"></a>
+                            </div> 
+                        </div>
+                    </div> 
                  </div>
-               </div>
             </div>
-         </div>
-          <button type="button" class="btn btn-block">ESTIMATION</button>
-          <a href="estimation_inputs.html"></a>
-          <button type="button" class="btn btn-block">STATUS</button>
-          <input class="btn btn-lg center-block approve" value="APPROVE" type="submit"> 
+         </div>    
       </div>
+      <div class="scroll-top-wrapper"> 
+         <img src="img/arrow-square-top.png"/> 
+      </div> 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
       <script src="js/bootstrap.min.js"></script>
       <script type="text/javascript">
@@ -245,6 +261,46 @@
 				 $('.text').removeAttr('readonly');
 			});   
 		  });  
-	  </script>
+	    </script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		  <script>
+         
+        $(function(){ 
+         
+            $(document).on( 'scroll', function(){
+         
+                if ($(window).scrollTop() > 100) {
+                    $('.scroll-top-wrapper').addClass('show');
+                } else { 
+                    $('.scroll-top-wrapper').removeClass('show');
+                }
+            });
+        }); 
+        </script>
+        
+        <script>
+         
+        $(function(){
+         
+            $(document).on( 'scroll', function(){
+         
+                if ($(window).scrollTop() > 100) {
+                    $('.scroll-top-wrapper').addClass('show');
+                } else {
+                    $('.scroll-top-wrapper').removeClass('show');
+                }
+            });
+         
+            $('.scroll-top-wrapper').on('click', scrollToTop);
+        });
+         
+        function scrollToTop() {
+            verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+            element = $('body');
+            offset = element.offset();
+            offsetTop = offset.top;
+            $('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
+        }
+        </script>
    </body>
 </html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Water Board Request OTP Application</title>
+       <link href="css/bootstrap.min.css" rel="stylesheet"> 
+      <link href="css/requestOPT.css" rel="stylesheet">
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="css/jquery.timepicker.css" /> 
+      <link rel="stylesheet" type="text/css" href="css/bootstrap-datepicker.standalone.css" />
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]--> 
+   </head>
+<body> 
+  <div id="page">
+    <div id="header">
+        <div class="container">
+           <div class="row">
+              <div class="col-md-3 col-sm-3 col-xs-3">
+                <div class="himg">
+                 <a href="applications_orientation.html"><img src="img/back_btn.png" class="img-responsive" id="btn" alt="logo"/></a>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-6" id="filter">
+                 <h3 class="text-center">ORIENTATION</h3>
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-3">
+                 <a href="filters.html"><img src="img/fil.png" class="img-responsive" alt="logo"/></a>
+              </div>
+           </div>
+        </div>
+     </div> 
+     <div class="details">
+        <div class="container"> 
+          <div class="row">
+           <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+            <div class="form-group" >
+             <a href="estimation_orientation.html" ><input style="margin-left:10px" class="btn btn-xs approve" value="ESTIMATION" type="submit"></a> 
+            </div> 
+            <div class="form-group" >
+             <h4>Application No : ASR123</h4> 
+             <h4>Mobile No      : 8885840240</h4>
+             <h4>Address        : 1-4-880/2/38</h4>  
+            </div> 
+              <div class="form-group" id="basicExample"> 
+              		 <label>Select Date :</label>
+              		 <input type="text" class="date start form-control" />
+                    <label>Select Time :</label>
+                    <input type="text" class="time start form-control" />
+               		 <label>Select Place</label> 
+                	<input type="text" class="form-control" name="place"/>
+              </div>
+               <div class="form-group" style="text-align:center">
+                <input class="btn btn-xs approve" value="CAPTURE PICTURE" type="submit">
+             </div> 
+             <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
+                <div class="earth_img">  
+                   <img src="img/earth.jpg" class="img-responsive center-block" alt="earth"/> 
+                </div> 
+            
+                <div class="earth_img">
+                   <img src="img/earth.jpg" class="img-responsive center-block" alt="earth"/>
+                  
+                </div>
+             
+             </div>
+             <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
+                <div class="earth_img">
+                   <img src="img/earth.jpg" class="img-responsive center-block" alt="earth"/>
+                   
+                </div>
+
+                <div class="earth_img">
+                   <img src="img/earth.jpg" class="img-responsive center-block" alt="earth"/>
+                   
+                </div> 
+                
+             </div> 
+             <div class="form-group" style="text-align:center">
+                <a href="files.html"><input class="btn btn-xs approve" value="SAVE" type="submit"></a> 
+            </div>  
+             </div>  
+          </div>    
+      </div>           
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.timepicker.js"></script> 
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script> 
+                $('#basicExample .time').timepicker({
+                    'showDuration': true, 
+                    'timeFormat': 'g:ia'
+                });
+
+                $('#basicExample .date').datepicker({
+                    'format': 'm/d/yyyy',
+                    'autoclose': true
+                });
+
+                var basicExampleEl = document.getElementById('basicExample');
+                var datepair = new Datepair(basicExampleEl);
+            </script>
+
+</body> 
+</html>
+   
